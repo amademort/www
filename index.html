@@ -12,6 +12,7 @@
     :root {
       --primary: #48CC48;
       --dark: #333;
+      --grey: #666;
       --light: #eee;
       --shadow: 0px 10px 20px rgba(104, 104, 104, 0.8);
       --font-mono: "Major Mono Display", Courier New, Courier, monospace;
@@ -26,7 +27,72 @@
     body {
       background: var(--primary-bg);
       margin: 1rem;
+      line-height: 1;
+      font-family: var(--font-serif);
+    }
+
+    h1 {
+      font-family: var(--font-sans);
+      text-align: center;
+      font-size: 4rem;
+      margin-top: 10rem;
+    }
+    
+    h1 small {
+      display: block;
+      font-size: 1.05rem;
+      font-family: var(--font-mono);
+    }
+
+    .channels {
+      list-style: none;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 0;
+      font-family: var(--font-mono);
+      text-align: right;
       line-height: 1.4;
+    }
+
+    .channels li a, .accent {
+      text-decoration: none;
+      color: var(--primary);
+    }
+
+    .channel:after {
+      content: "/";
+    }
+  </style>
+</head><!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>amademort</title>
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Oranienbaum|Unica+One" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #48CC48;
+      --dark: #333;
+      --grey: #666;
+      --light: #eee;
+      --shadow: 0px 10px 20px rgba(104, 104, 104, 0.8);
+      --font-mono: "Major Mono Display", Courier New, Courier, monospace;
+      --font-sans: "Unica One", sans-serif;
+      --font-serif: "Oranienbaum", serif;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--primary-bg);
+      margin: 1rem;
+      line-height: 1;
       font-family: var(--font-serif);
     }
 
@@ -37,6 +103,12 @@
       margin-top: 10rem;
     }
 
+    h1 small {
+      display: block;
+      font-size: 1.05rem;
+      font-family: var(--font-mono);
+    }
+
     .channels {
       list-style: none;
       max-width: 300px;
@@ -44,9 +116,11 @@
       padding: 0;
       font-family: var(--font-mono);
       text-align: right;
+      line-height: 1.4;
     }
 
-    .channels li a {
+    .channels li a,
+    .accent {
       text-decoration: none;
       color: var(--primary);
     }
@@ -59,7 +133,34 @@
 
 <body>
   <div>
-    <h1>amademort</h1>
+    <h1>ama<span class="accent">de</span>mort <small>fietje amadeus voldemort</small></h1>
+  </div>
+  <div>
+    <ul class="channels">
+      <li><span class=""></span><a href="https://amademort.com" title="web"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">facebook</span><a href="https://fb.me/amademort" title="facebook"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">flickr</span><a href="https://www.flickr.com/photos/amademort/" title="flickr"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">github</span><a href="https://github.com/amademort" title="github"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">goodreads</span><a href="goodreads.com/amademort" title="goodreads"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">hackernews</span><a href="https://news.ycombinator.com/user?id=amademort" title="hackernews"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">imgur</span><a href="https://imgur.com/user/amademort" title="imgur"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">keybase</span><a href="keybase.io/amademort" title="keybase"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">lastfm</span><a href=https://www.last.fm/user/amademort "" title="lastfm"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">linkedin</span><a href="https://linkedin.com/in/amademort" title="linkedin"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">pinterest</span><a href="https://www.pinterest.de/amademort/" title="pinterest"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">reddit</span><a href="https://reddit.com/u/amademort" title="reddit"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">soundcloud</span><a href="https://soundcloud.com/user/amademort" title="soundcloud"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">tumblr</span><a href="https://amademort.tumblr.com/" title="tumblr"><span class="handle">amademort</span></a></li>
+      <li><span class="channel">twitter</span><a href="https://twitter.com/amademort" title="twitter"><span class="handle">amademort</span></a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
+
+<body>
+  <div>
+    <h1>ama<span class="accent">de</span>mort <small>fietje amadeus voldemort</small></h1>
   </div>
   <div>
     <ul class="channels">
