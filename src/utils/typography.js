@@ -2,7 +2,7 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: "20px",
+  baseFontSize: "16px",
   baseLineHeight: 1.5,
   googleFonts: [
      {

@@ -44,8 +44,12 @@ class itemTemplate extends React.Component {
         </div>
 
         <ul class="item-context">
-          <li>{previous && (<Link to={`gallery${previous.fields.slug}`} rel="prev">← {previous.frontmatter.title}</Link>)}</li>
-          <li>{next && (<Link to={`gallery${next.fields.slug}`} rel="next">{next.frontmatter.title} →</Link>)}</li>
+          <li>
+            {previous && (<Link to={`gallery${previous.fields.slug}`} rel="prev">← {previous.frontmatter.title}</Link>)}
+          </li>
+          <li>
+            {next && (<Link to={`gallery${next.fields.slug}`} rel="next">{next.frontmatter.title} →</Link>)}
+          </li>
         </ul>
       </Layout>
     )

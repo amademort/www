@@ -47,8 +47,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const items = result.data.items.edges
 
   items.forEach((item, index) => {
-    const previous = index === items.length - 1 ? null : items[index + 1].node
-    const next = index === 0 ? null : items[index - 1].node
+    const next = index === items.length - 1 ? null : items[index + 1].node
+    const previous = index === 0 ? null : items[index - 1].node
 
     createPage({
       path: `gallery${item.node.fields.slug}`,
