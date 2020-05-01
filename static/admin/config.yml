@@ -1,7 +1,7 @@
 backend:
-  name: test-repo
-  # name: github
-  # repo: amademort/www
+  # name: test-repo
+  name: github
+  repo: amademort/www
   
 media_folder: static/assets
 public_folder: assets
@@ -18,26 +18,20 @@ collections:
       - { name: body, label: Body, widget: markdown }
       
       
-  - name: projects
-    label: Projects
-    folder: content/projects
+
+  - name: photos
+    label: Photos
+    folder: content/projects/photo
     create: true
     fields:
+      - { name: thumbnail, label: Thumbnail, widget: image }
+      - { name: draft, label: Draft, widget: boolean, default: false }
+      - { name: featured, label: Featured, widget: boolean, default: false }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: tags, label: Tags, widget: list, field: { name: tag, label: Tag } }
-      - { name: language, label: Language, widget: select, options: [de, en], default: [en]}
-      - { name: category, label: Category, widget: select, multiple: true, options: [code, photo, audio, video, design]}
+      - { name: category, label: Category, widget: select, multiple: true, options: [code, photo, audio, video, design], default: [photo]}
+      - { name: tools, label: Tools, widget: list, field: { name: tool, label: Tool }, default: [ɑ6400] }
       - { name: body, label: Body, widget: markdown }
-
-  
-  - name: resources
-    label: Resources
-    folder: content/resources
-    create: true
-    fields:
-      - { name: title, label: Title }
-      - { name: category, label: Category, widget: select, multiple: true, options: [category1, category2, category3]}
-      - { name: tags, label: Tags, widget: list, field: { name: tag, label: Tag } }
-      - { name: language, label: Language, widget: select, options: [de, en], default: [en]}
+      
