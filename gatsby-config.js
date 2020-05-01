@@ -1,6 +1,6 @@
 module.exports = {
 
-  // METADATA
+  // metadata
   siteMetadata: {
     title: `amademort`,
     author: `amadeus de mortis`,
@@ -10,28 +10,31 @@ module.exports = {
       twitter: `amademort`,
     },
 
-    // MENUS
+    // menus
     menuMain:[
       {
-        name:`photo`,
-        link:`/photo`
+        name: `img`,
+        title: `image gallery`,
+        link: `/img`
       },
     ],
     menuSocial:[     
       {
-        name:`ig`,
-        link:`https://instagram.com/amademort`
+        name: `iG`,
+        title: `instagram`,
+        link: `https://instagram.com/amademort`
       },
     ],
     menuLegal:[
       {
-        name:`tos`,
-        link:`/legal`
+        name: `ToS`,
+        title: `legal terms`,
+        link: `/legal`
       }
     ],
   },
 
-  // PLUGINS
+  // plugins
   plugins: [
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
@@ -46,14 +49,21 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-catch-links`,
 
+    // use: filter: { sourceInstanceName: { eq: "NAME" } }
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/projects`,
-        name: `projects`,
+        path: `${__dirname}/content/gallery`,
+        name: `gallery`,
       },
     },
-
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/gallery/img`,
+        name: `images`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -61,7 +71,6 @@ module.exports = {
         name: `pages`,
       },
     },
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -70,14 +79,15 @@ module.exports = {
       },
     },
 
+    // markdown
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          pages: require.resolve("./src/templates/project.js"),
-          default: require.resolve("./src/templates/page.js"),
+          pages: require.resolve("./src/templates/page.js"),
+          default: require.resolve("./src/templates/item.js"),
         },
-        extensions: [".mdx", ".md"],
+        extensions: [".md"],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-embedder`,
@@ -91,8 +101,13 @@ module.exports = {
               maxWidth: 2000,
               linkImagesToOriginal: false,
               withWebp: true,
-              tracedSVG: true,
             },
+          },
+          {
+            resolve: `gatsby-remark-images-zoom`,
+            options: {
+              background: `rgba(0, 0, 0, 0.8)`,
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -113,6 +128,7 @@ module.exports = {
       },
     },
 
+    // google analytics
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -120,40 +136,26 @@ module.exports = {
       },
     },
 
+
+    // pwa
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `amademort design`,
         short_name: `amademort`,
         start_url: `/`,
-        // icon: `content/assets/logos/amademort_mac.png`,
+        background_color: `#FEFEFE`,
+        theme_color: `#48CC48`,
+        display: `standalone`,
+        icon: `content/assets/logos/amademort_mac.png`,
       },
     },
 
+    // typography
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
-      },
-    },
-
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              linkImagesToOriginal: false,
-            },
-          },
-          {
-            resolve: `gatsby-remark-images-zoom`,
-            options: {
-              background: `rgba(0, 0, 0, 0.8)`,
-            }
-          },
-        ],
       },
     },
     

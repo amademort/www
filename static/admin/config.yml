@@ -8,27 +8,36 @@ public_folder: /assets
 
 collections:
   - name: pages
-    label: Pages
+    label: PGS
     folder: content/pages
     create: true
     fields:
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: language, label: Language, widget: select, options: [de, en], default: [de]}
-      - { name: body, label: Body, widget: markdown }
+      - { name: title, label: title }
+      - { name: description, label: description }
+      - { name: date, label: date, widget: date }
 
-  - name: photos
-    label: Photos
-    folder: content/projects/photo
+      - { name: thumbnail, label: thumbnail, widget: image }
+
+      - { name: draft, label: draft, widget: boolean, default: false }
+
+      - { name: body, label: body, widget: markdown }
+
+  - name: img
+    label: IMG
+    folder: content/gallery/img
     create: true
     fields:
-      - { name: thumbnail, label: Thumbnail, widget: image }
-      - { name: draft, label: Draft, widget: boolean, default: false }
-      - { name: featured, label: Featured, widget: boolean, default: false }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: tags, label: Tags, widget: list, field: { name: tag, label: Tag } }
-      - { name: category, label: Category, widget: select, multiple: true, options: [code, photo, audio, video, design], default: [photo]}
-      - { name: tools, label: Tools, widget: list, field: { name: tool, label: Tool }, default: [ɑ6400] }
-      - { name: body, label: Body, widget: markdown }
+      - { name: title, label: title }
+      - { name: description, label: description }
+      - { name: date, label: date, widget: date }
+
+      - { name: thumbnail, label: thumbnail, widget: image }
+
+       - { name: categories, label: categories, widget: select, multiple: true, options: [code, photo, audio, video, design], default: [photo]}
+      - { name: tags, label: tags, widget: list, field: { name: tag, label: tag } }
+      - { name: tools, label: tools, widget: list, field: { name: tool, label: tool }, default: [ɑ6400] }
+
+      - { name: draft, label: draft, widget: boolean, default: false }
+      - { name: featured, label: featured, widget: boolean, default: false }
+
+      - { name: body, label: body, widget: markdown }

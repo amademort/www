@@ -1,7 +1,8 @@
 import React from "react"
-import styled from "styled-components"
-import { rhythm } from "../utils/typography"
 
+import styled from "styled-components"
+
+import { rhythm } from "../utils/typography"
 import Copyright from "./copyright"
 import ThemeToggle from "./themetoggle"
 

@@ -1,4 +1,4 @@
-// Documentation on: https://github.com/KyleAMathews/typography.js/blob/master/packages/typography-theme-lincoln/src/index.js
+// docs: github.com/KyleAMathews/typography.js/blob/master/packages/typography-theme-lincoln/src/index.js
 import Typography from "typography"
 
 const typography = new Typography({
