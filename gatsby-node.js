@@ -31,7 +31,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
 
       projectsRemark: allMdx(
-        filter: {frontmatter: {draft: {ne: true}}, fileAbsolutePath: {regex: "/projects/"}}
+        filter: {frontmatter: {draft: {ne: true}}, fileAbsolutePath: {regex: "/projects/photo/"}}
         sort: { fields: [frontmatter___date], order: DESC }
         limit: 1000
       ) {
