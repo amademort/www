@@ -31,7 +31,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
 
       projectsRemark: allMdx(
-        filter: {frontmatter: {draft: {ne: true}}, fileAbsolutePath: {regex: "/projects/photo/"}}
+        filter: {frontmatter: {draft: {ne: true}}, fileAbsolutePath: {regex: "/projects/"}}
         sort: { fields: [frontmatter___date], order: DESC }
         limit: 1000
       ) {
@@ -75,7 +75,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const next = index === 0 ? null : projects[index - 1].node
 
     createPage({
-      path: `projects/photo${project.node.fields.slug}`,
+      path: `projects${project.node.fields.slug}`,
       component: ProjectTemplate,
       context: {
         slug: project.node.fields.slug,

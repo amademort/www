@@ -1,5 +1,5 @@
 ---
-thumbnail: ./mustang.jpg
+thumbnail: ../../../static/assets/mustang.jpg
 draft: false
 featured: false
 date: 2020-05-01T00:00:00.000Z
@@ -16,4 +16,5 @@ description: a wild mustang appears
 category:
   - photo
 ---
-![Ford Mustang](./mustang.jpg)
+
+![MUSTANG](/assets/mustang.jpg)
