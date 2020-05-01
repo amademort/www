@@ -17,4 +17,4 @@ category:
   - photo
 ---
 
-![MUSTANG](/assets/mustang.jpg)
+![Ford Mustang](/assets/mustang.jpg)
