@@ -75,7 +75,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const next = index === 0 ? null : projects[index - 1].node
 
     createPage({
-      path: `projects${project.node.fields.slug}`,
+      path: `projects/photo${project.node.fields.slug}`,
       component: ProjectTemplate,
       context: {
         slug: project.node.fields.slug,
