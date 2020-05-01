@@ -2,7 +2,7 @@
 title: horse power
 date: 2020-04-30
 description: a wild mustang appears
-thumbnail: ./mustang.jpg
+thumbnail: assets/mustang.jpg
 featured: true
 draft: false
 categories: 
@@ -15,4 +15,5 @@ tools:
   - ɑ6400
 ---
 
-![Black Ford Mustang at night with shining headlights](./mustang.jpg)
+![Black Ford Mustang at night with shining headlights](assets/mustang.jpg "Ford Mustang")
+
