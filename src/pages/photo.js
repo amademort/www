@@ -15,7 +15,7 @@ class Projects extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="photography" />
-        <h1>photography</h1>
+        <h1>gallery</h1>
         <div className="projects" style={{ margin: "1rem 0 2rem" }}>
           {projects.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
@@ -42,8 +42,12 @@ class Projects extends React.Component {
                     {title}
                   </Link>
                 </h3>
-                <small>{node.frontmatter.date}</small>
                 <ul class="project-tags">
+                  <li class="project-date">
+                      <p class="project-date">
+                        {node.frontmatter.date}
+                      </p>
+                  </li>
                   {node.frontmatter.categories.map((category) => { return(
                     <li class="project-category">{category}</li>
                   )})}

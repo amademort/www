@@ -26,18 +26,10 @@ module.exports = {
         link:'/photo'
       },
     ],
-    menuSocial:[
-      {
-        name:'tw',
-        link:'https://twitter.com/amademort'
-      },      
+    menuSocial:[     
       {
         name:'ig',
         link:'https://instagram.com/amademort'
-      },
-      {
-        name:'gh',
-        link:'https://github.com/amademort'
       },
     ],
     menuLegal:[

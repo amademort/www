@@ -1,8 +1,6 @@
 ---
-title: terms
+title: i am legal
 description: impressum (legal information) - amademort
 ---
 
-fw - [digital creative.](https://fabianwohlgemuth.de)  
-wilhelmstr 6, d-33602  
-gmail: amademort
+And real! you can write me  @ gmail: amaDEmort -- or follow me on INSTA 📸.

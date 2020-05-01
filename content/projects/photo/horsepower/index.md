@@ -13,7 +13,6 @@ tags:
   - street
 tools:
   - ɑ6400
-  - lightroom
 ---
 
 ![Black Ford Mustang at night with shining headlights](./mustang.jpg)

@@ -44,6 +44,11 @@ class Projects extends React.Component {
                 </h3>
                 <small>{node.frontmatter.date}</small>
                 <ul class="project-tags">
+                  <li class="project-date">
+                    <p class="project-date">
+                      {node.frontmatter.date}
+                    </p>
+                  </li>
                   {node.frontmatter.categories.map((category) => { return(
                     <li class="project-category">{category}</li>
                   )})}

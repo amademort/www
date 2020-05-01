@@ -69,13 +69,7 @@ h1 {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: .5rem;
-
-  .project {
-    .info {
-    }
-  }
+  grid-template-columns: 1fr;
 }
 
 header {
@@ -179,6 +173,10 @@ ul {
       margin-bottom: .5rem;
       box-shadow: .2rem .2rem .1rem $theme-pink;
 
+      &.project-date {
+        box-shadow: none;
+      }
+
       &.project-tag {
       color: $theme-gray-dark;
       background-color: $theme-yellow;
@@ -199,7 +197,7 @@ ul {
 }
 
 .project-body {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 

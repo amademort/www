@@ -25,17 +25,12 @@ class ProjectsPostTemplate extends React.Component {
         />
         <h1>{project.frontmatter.title}</h1>
         <Image fluid={thumbnailSource} alt="thumbnail" />
-        <p class="project-date"
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {project.frontmatter.date}
-        </p>
         <ul class="project-tags">
+          <li class="project-date">
+            <p class="project-date">
+              {project.frontmatter.date}
+            </p>
+          </li>
           {categories.map((category) => { return(
             <li class="project-category">{category}</li>
           )})}
