@@ -1,18 +1,19 @@
 ---
-title: horse power
-description: a wild mustang appears
-date: 2020-05-01
+thumbnail: assets/mustang.jpg
 draft: false
 featured: false
-thumbnail: ./mustang.jpg
-categories: 
-  - photo
-tags: 
+date: 2020-05-01T00:00:00.000Z
+title: horse power
+tags:
   - car
   - night
   - street
 tools:
   - A6400
+categories:
+  - photo
+description: a wild mustang appears
+category:
+  - photo
 ---
-
-TEST
+![Ford Mustang](assets/mustang.jpg)
