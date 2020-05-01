@@ -74,13 +74,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/static/assets`,
-        name: `uploads`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
@@ -98,7 +91,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 3000,
+              maxWidth: 2000,
               linkImagesToOriginal: false,
               withWebp: true,
               tracedSVG: true,
@@ -139,7 +132,7 @@ module.exports = {
         //theme_color: `#EE6600`,
         //display: `standalone`,
         // edit below
-        icon: `content/assets/logos/fwdc_xl_tp.png`,
+        icon: `content/assets/logos/amademort_mac.png`,
       },
     },
     {
