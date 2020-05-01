@@ -48,6 +48,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-catch-links`,
+    `gatsby-remark-images`,
 
     // use: filter: { sourceInstanceName: { eq: "NAME" } }
     {
@@ -85,22 +86,18 @@ module.exports = {
       options: {
         defaultLayouts: {
           pages: require.resolve("./src/templates/page.js"),
-          default: require.resolve("./src/templates/item.js"),
+          images: require.resolve("./src/templates/item.js"),
         },
         extensions: [".md"],
         gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-embedder`,
-          },
-          {
-            resolve: `gatsby-remark-relative-images`,
-          },
+          `gatsby-remark-embedder`,
+          `gatsby-remark-relative-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 2000,
               linkImagesToOriginal: false,
-              withWebp: true,
+              tracedSVG: true,
             },
           },
           {
@@ -108,21 +105,6 @@ module.exports = {
             options: {
               background: `rgba(0, 0, 0, 0.8)`,
             }
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-vscode`,
-          },
-          {
-            resolve: `gatsby-remark-copy-linked-files`,
-          },
-          {
-            resolve: `gatsby-remark-smartypants`,
           },
         ],
       },
