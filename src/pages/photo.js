@@ -22,12 +22,7 @@ class Projects extends React.Component {
             return (
               <div key={node.fields.slug} class="project">
                 <div class="thumbnail">
-                <Link
-                    style={{ boxShadow: `none` }}
-                    to={`projects${node.fields.slug}`}
-                  >
                 <img src={node.frontmatter.thumbnail.childImageSharp.fluid.src} alt={title} />
-                </Link>
                 </div>
                 <div class="info">
                 <h3
@@ -35,12 +30,7 @@ class Projects extends React.Component {
                     marginBottom: rhythm(1 / 4),
                   }}
                 >
-                  <Link
-                    style={{ boxShadow: `none` }}
-                    to={`projects${node.fields.slug}`}
-                  >
-                    {title}
-                  </Link>
+                  {title}
                 </h3>
                 <ul class="project-tags">
                   <li class="project-date">
