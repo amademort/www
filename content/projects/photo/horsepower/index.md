@@ -1,5 +1,5 @@
 ---
-title: horse power oh no this igets long
+title: horse power
 date: 2020-04-30
 description: a wild mustang appears
 thumbnail: ./mustang.jpg
