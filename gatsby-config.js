@@ -147,7 +147,7 @@ module.exports = {
         background_color: `#FEFEFE`,
         theme_color: `#48CC48`,
         display: `standalone`,
-        icon: `content/assets/logos/amademort_mac.png`,
+        icon: `content/assets/logos/amademort_logo.png`,
       },
     },
 
