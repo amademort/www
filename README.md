@@ -1,13 +1,14 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://amademort.netlify.com">
-    <img alt="amademort" src="/content/assets/logos/fwdc_xl_tp.png" width="60" />
+<h1 style="text-align:center;" id="site-title">
+  <a href="https://amademort.com" title="amademort">
+    amademort
   </a>
-</p>
+  <small style="display: block;">
+    design
+  </small>
+</h1>
 
-<h2 style="text-align:center;" id="site-title"><Link to="/" title={siteTitle}>ama<span class="accent">de</span>mort</Link><small style="display:block;">design</small>
-</h2>
+## STATUS
 
-## Deploy Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/20bdea9e-2cfd-4d41-8f38-03c4773eb041/deploy-status)](https://app.netlify.com/sites/amademort/deploys)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/20bdea9e-2cfd-4d41-8f38-03c4773eb041/deploy-status)](https://app.netlify.com/sites/amademort/deploys) > deploying to [AMADEMORT.com](https://amademort.com)
+DEPLOYING to [AMADEMORT.com](https://amademort.com)

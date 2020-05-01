@@ -1,44 +1,37 @@
 module.exports = {
+
+  // METADATA
   siteMetadata: {
-    // edit below
     title: `amademort`,
     author: `amadeus de mortis`,
-    description: 'amademort | design',
+    description: `amademort | design`,
     siteUrl: `https://amademort.com`,
     social: {
       twitter: `amademort`,
     },
+
+    // MENUS
     menuMain:[
-      // {
-      //   name:'design',
-      //   link:'/design'
-      // },
-      // {
-      //   name:'code',
-      //   link:'/code'
-      // },
-      // {
-      //   name:'audio',
-      //   link:'/audio'
-      // },
       {
-        name:'photo',
-        link:'/photo'
+        name:`photo`,
+        link:`/photo`
       },
     ],
     menuSocial:[     
       {
-        name:'ig',
-        link:'https://instagram.com/amademort'
+        name:`ig`,
+        link:`https://instagram.com/amademort`
       },
     ],
     menuLegal:[
       {
-        name:'tos',
-        link:'/legal'
+        name:`tos`,
+        link:`/legal`
       }
     ],
   },
+
+  // PLUGINS
   plugins: [
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
@@ -52,6 +45,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-catch-links`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -59,6 +53,7 @@ module.exports = {
         name: `projects`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -66,6 +61,7 @@ module.exports = {
         name: `pages`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -73,6 +69,7 @@ module.exports = {
         name: `assets`,
       },
     },
+
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -115,38 +112,37 @@ module.exports = {
         ],
       },
     },
+
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // edit below
         trackingId: ``,
       },
     },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `amademort | design`,
+        name: `amademort design`,
         short_name: `amademort`,
         start_url: `/`,
-        //background_color: `#222222`,
-        //theme_color: `#EE6600`,
-        //display: `standalone`,
-        // edit below
-        icon: `content/assets/logos/amademort_mac.png`,
+        // icon: `content/assets/logos/amademort_mac.png`,
       },
     },
+
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
+            resolve: `gatsby-remark-images`,
             options: {
               linkImagesToOriginal: false,
             },
@@ -160,5 +156,6 @@ module.exports = {
         ],
       },
     },
+    
   ],
 }

@@ -1,5 +1,4 @@
 backend:
-  # name: test-repo
   name: git-gateway
   repo: amademort/www
   branch: master
@@ -17,7 +16,6 @@ collections:
       - { name: description, label: Description }
       - { name: language, label: Language, widget: select, options: [de, en], default: [de]}
       - { name: body, label: Body, widget: markdown }
-
 
   - name: photos
     label: Photos

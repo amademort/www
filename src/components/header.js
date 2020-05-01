@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from 'prop-types'
 
-
 const Header = ({ siteTitle, menuMain }) => (
   <header>
     <h2 id="site-title"><Link to="/" title={siteTitle}>ama<span class="accent">de</span>mort</Link><small>design</small>

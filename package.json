@@ -1,12 +1,10 @@
 {
-  "name": "gatsby-fwdc-starter",
+  "name": "gatsby-amademort",
   "private": true,
-  "description": "Personal starter FWDC.",
+  "description": "amademort",
   "version": "1.0.0",
-  "author": "Fabian Wohlgemuth <fw@fabianwohlgemuth.de>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "amadeus <amademort@gmail.com>",
+
   "dependencies": {
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
@@ -55,9 +53,11 @@
     "typography": "^0.16.19",
     "vendor": "^1.7.0"
   },
+
   "devDependencies": {
     "prettier": "^1.17.0"
   },
+
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
     "gatsby"
@@ -68,6 +68,7 @@
     "type": "git",
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
+  
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

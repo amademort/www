@@ -29,7 +29,6 @@ $media-bp-md: 768px;
 $media-bp-lg: 992px;
 $media-bp-xl: 1200px;
 
-
 /* RESET */
 
 /* GENERAL */
@@ -105,7 +104,6 @@ img {
   margin: 0;
 }
 
-
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: $media-bp-sm) {
@@ -125,9 +123,7 @@ img {
 @media only screen and (min-width: $media-bp-xl) {
 }
 
-
 /* FONT STYLES */
-
 
 /* LIGHT THEME */
 
@@ -200,11 +196,9 @@ ul {
   margin-top: 1rem;
 }
 
-
 #footer-wrapper {
   background-color: $light-footer;
 }
-
 
 /** DARK THEME **/
 body.dark {

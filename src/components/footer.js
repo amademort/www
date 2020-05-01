@@ -15,7 +15,6 @@ const Footer = ({ menuLegal, menuSocial }) => (
   </FooterWrapper>
 )
 
-
 const FooterWrapper = styled.div`
 `
 

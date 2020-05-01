@@ -29,6 +29,7 @@ const Layout = ({ children }) => (
         }
       }
     `}
+    
     render={data => (
       <React.Fragment>
         <OuterWrapper>
