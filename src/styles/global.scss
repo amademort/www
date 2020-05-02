@@ -38,18 +38,21 @@ img {
   margin: 0;
 
   &:hover {
-    box-shadow: 2rem -2rem 0 $theme-pink;
+    box-shadow: 2rem 2rem 0 $theme-pink;
   }
 }
 .gatsby-resp-image-wrapper {
-  box-shadow: .4rem .4rem .1rem $theme-pink;
+  // box-shadow: .4rem .4rem .1rem $theme-pink;
 }
 
-.image-clean > .gatsby-resp-image-wrapper, img:hover {
+.image-clean > .gatsby-resp-image-wrapper, .image-clean > p > .gatsby-resp-image-wrapper {
     box-shadow: none;
   }
 .image-sm {
   max-width: 300px;
+}
+.image-md {
+  max-width: 600px;
 }
 .image-center {
   margin: 0 auto;

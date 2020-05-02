@@ -12,12 +12,14 @@ tools:
   - google fonts
 categories:
   - photo
-description: amademort logo design idea
+description: AMADEMORT logo design idea
 category:
   - photo
 ---
-This is a first idea for the **amademort** logo design. Weird agressive colors; but that's me. Here, another emoji for YOU: 🎅
+THIS is a first idea for the **AMADEMORT** logo design. Weird agressive colors; but that's me. Here, another EMOJI for you: 🎅
 
-<div class="image-clean image-sm image-center">
-  <img src="../assets/logos/amademort_logo.png" alt="amademort logo" />
+<div class="note image-clean image-sm image-center">
+
+![amademort logo](../../assets/logos/amademort-logo.png)
+
 </div>
